@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  word-break: break-word;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.contentcontainer {
+  margin-top: 70px;
+}
+
+.is-invalid {
+  border: 1px solid #ff0000 !important;
+}
+
+.authcontainer {
+  padding: 5px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.authcontainer input {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  width: 100%;
+}
+.authcontainer input:focus {
+  outline: 5px solid #0000ff !important;
+}
+.authcontainer input.is-invalid:focus {
+  outline: none !important;
+}
+.authcontainer div {
+  margin-bottom: 10px;
+}
+.authcontainer button {
+  background-color: #008000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0000ff !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+.text-danger {
+  color: #ff0000;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 5px;
+}
+nav .parentcontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+nav .parentcontainer .logo {
+  color: #808080 !important;
+  font-size: 20px;
+}
+nav .parentcontainer a {
+  color: #808080 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .contentcontainer {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav .parentcontainer .burgerbuttonmenu {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contentcontainer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  nav .parentcontainer .burgerbuttonmenu {
+    display: block;
+  }
+  nav .parentcontainer .burgermenu {
+    display: none;
+  }
+  nav .parentcontainer .none {
+    display: none;
+  }
+}/*# sourceMappingURL=app.css.map */
